@@ -12164,7 +12164,7 @@ comprehend what caused the message to be logged. Each message can be turned
 into a <code>MessageContainer</code> which contains the log level and can later be
 consumed by a subclass of <code>Reporter</code>. However, the error position is only
 part of <code>MessageContainer</code>, not <code>Message</code>.</p>
-<p>NOTE: you should not be persisting messages. Most messages take an implicit
+<p>NOTE: you should not be persisting  Most messages take an implicit
 <code>Context</code> and these contexts weigh in at about 4mb per instance, as such
 persisting these will result in a memory leak.</p>
 <p>Instead use the <code>persist</code> method to create an instance that does not keep a
