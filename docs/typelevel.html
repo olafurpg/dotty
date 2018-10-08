@@ -127,7 +127,7 @@ nth(as -1)
 </code></pre>
 <p>So the end result of the expansion is the expression <code>throw new IndexOutOfBoundsException</code>, which has type <code>Nothing</code>. It is important to note that programs are treated as <em>data</em> in this process, so the exception will not be thrown at compile time, but only if the program is run after it compiles without errors.</p>
 <h2><a href="#rewrite-conditionals" id="rewrite-conditionals">Rewrite Conditionals</a></h2>
-<p>Like matches, if-then-else expressions can also be prefixed with the <code>rewrite</code> modifier. Such rewrite conditional must have conditions that with a compile-time boolean result. The conditional then recuces to one of its branches depending on whether the condition is knwon to be <code>true</code> or to be <code>false</code>.</p>
+<p>Like matches, if-then-else expressions can also be prefixed with the <code>rewrite</code> modifier. Such rewrite conditional must have conditions that with a compile-time boolean result. The conditional then recuces to one of its branches depending on whether the condition is known to be <code>true</code> or to be <code>false</code>.</p>
 <p>For instance, here is an alternative version of <code>toNat</code> formulated with a conditional instead of a <code>match</code>.</p>
 <pre><code class="language-scala">rewrite def toNat(n: Int): Nat =
   rewrite if n == 0 then Z
