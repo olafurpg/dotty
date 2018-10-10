@@ -12746,6 +12746,70 @@ Int<span>, </span>List
                     </div>
                 </div><!-- end member -->
                 
+                <div id="enclosingSourceSymbol(path)(ctx)" class="member ">
+                    <div class="member-title">
+                        <span class="expand-button visible" onclick="toggleMemberBody(this, 'enclosingSourceSymbol(path)(ctx)');">[+]</span>
+                        <span class="member-annotations">
+                            
+                        </span>
+                        <span class="member-modifiers">
+                            
+                        </span>
+                        <span class="member-kind">
+                            def
+                        </span>
+                        <span class="member-name ">
+                            
+                                enclosingSourceSymbol
+                            
+                        </span>
+
+                        
+                            
+                            <span class="no-left">(</span>
+                                
+                                
+                                    <span class="no-left">
+                                        path:
+                                    </span>
+                                    List
+<span class="no-left no-right">[</span>
+<a href="../../../../.././api/dotty/tools/dotc/ast/Trees$/Instance.html#Tree">Tree</a>
+<span class="no-left">]</span>
+                                    
+                                
+                            <span class="no-left">)</span>
+                            
+                            <span class="no-left">(</span>
+                                
+                                <span class="no-left keyword">implicit</span>
+                                
+                                
+                                    <span class="no-left">
+                                        ctx:
+                                    </span>
+                                    <a href="../../../../.././api/dotty/tools/dotc/core/Contexts$/Context.html">Context</a>
+                                    
+                                
+                            <span class="no-left">)</span>
+                            
+                        
+
+                        
+
+                        
+                        <span class="no-left">: <a href="../../../../.././api/dotty/tools/dotc/core/Symbols$/Symbol.html">Symbol</a></span>
+                        
+                    </div><!-- end member-title -->
+
+                    <div class="member-body">
+                        <div class="member-body-long" id ="long-body-enclosingSourceSymbol(path)(ctx)">
+                            <p>The source symbol that is the closest to <code>path</code>.</p>
+
+                        </div>
+                    </div>
+                </div><!-- end member -->
+                
                 <div id="enclosingSourceSymbol(trees,pos)(ctx)" class="member ">
                     <div class="member-title">
                         <span class="expand-button visible" onclick="toggleMemberBody(this, 'enclosingSourceSymbol(trees,pos)(ctx)');">[+]</span>
@@ -12812,7 +12876,9 @@ Int<span>, </span>List
 
                     <div class="member-body">
                         <div class="member-body-long" id ="long-body-enclosingSourceSymbol(trees,pos)(ctx)">
-                            <p>The source symbol of the closest enclosing tree with a symbol containing position <code>pos</code>.</p>
+                            <p>The source symbol that is the closest to the path to <code>pos</code> in <code>trees</code>.</p>
+<p>Computes the path from the tree with position <code>pos</code> in <code>trees</code>, and extract it source
+symbol.</p>
 
                         </div>
                     </div>
@@ -13021,6 +13087,81 @@ Int<span>, </span>List
                     <div class="member-body">
                         <div class="member-body-long" id ="long-body-enclosingType(trees,pos)(ctx)">
                             <p>The type of the closest enclosing tree with a type containing position <code>pos</code>.</p>
+
+                        </div>
+                    </div>
+                </div><!-- end member -->
+                
+                <div id="findDefinitions(path,driver)(ctx)" class="member ">
+                    <div class="member-title">
+                        <span class="expand-button visible" onclick="toggleMemberBody(this, 'findDefinitions(path,driver)(ctx)');">[+]</span>
+                        <span class="member-annotations">
+                            
+                        </span>
+                        <span class="member-modifiers">
+                            
+                        </span>
+                        <span class="member-kind">
+                            def
+                        </span>
+                        <span class="member-name ">
+                            
+                                findDefinitions
+                            
+                        </span>
+
+                        
+                            
+                            <span class="no-left">(</span>
+                                
+                                
+                                    <span class="no-left">
+                                        path:
+                                    </span>
+                                    List
+<span class="no-left no-right">[</span>
+<a href="../../../../.././api/dotty/tools/dotc/ast/Trees$/Instance.html#Tree">Tree</a>
+<span class="no-left">]</span>
+                                    
+                                        <span class="no-left">, </span>
+                                    
+                                
+                                    <span class="">
+                                        driver:
+                                    </span>
+                                    <a href="../../../../.././api/dotty/tools/dotc/interactive/InteractiveDriver.html">InteractiveDriver</a>
+                                    
+                                
+                            <span class="no-left">)</span>
+                            
+                            <span class="no-left">(</span>
+                                
+                                <span class="no-left keyword">implicit</span>
+                                
+                                
+                                    <span class="no-left">
+                                        ctx:
+                                    </span>
+                                    <a href="../../../../.././api/dotty/tools/dotc/core/Contexts$/Context.html">Context</a>
+                                    
+                                
+                            <span class="no-left">)</span>
+                            
+                        
+
+                        
+
+                        
+                        <span class="no-left">: List
+<span class="no-left no-right">[</span>
+<a href="../../../../.././api/dotty/tools/dotc/interactive/SourceTree.html">SourceTree</a>
+<span class="no-left">]</span></span>
+                        
+                    </div><!-- end member-title -->
+
+                    <div class="member-body">
+                        <div class="member-body-long" id ="long-body-findDefinitions(path,driver)(ctx)">
+                            <p>Find the definitions of the symbol at the end of <code>path</code>.</p>
 
                         </div>
                     </div>
