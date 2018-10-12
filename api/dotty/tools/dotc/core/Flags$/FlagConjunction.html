@@ -1,4 +1,4 @@
-<!-- This page was last generated on 2018-10-11 -->
+<!-- This page was last generated on 2018-10-12 -->
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -12749,7 +12749,7 @@ Pre: The intersection of the typeflags of both sets must be non-empty.</p>
                                     <span class="no-left">
                                         flags:
                                     </span>
-                                    <a href="../../../../../.././api/dotty/tools/dotc/core/Flags$/FlagSet.html">FlagSet</a>
+                                    <a href="../../../../../.././api/dotty/tools/dotc/core/Flags$/FlagConjunction.html">FlagConjunction</a>
                                     
                                         <span class="no-left">, </span>
                                     
@@ -12773,8 +12773,9 @@ Pre: The intersection of the typeflags of both sets must be non-empty.</p>
 
                     <div class="member-body">
                         <div class="member-body-long" id ="long-body-is(flags,butNot)">
-                            <p>Does this flag set have a non-empty intersection with the given flag set,
-and at the same time contain none of the flags in the <code>butNot</code> set?</p>
+                            <p>Does this flag set have all of the flags in given flag conjunction?
+and at the same time contain none of the flags in the <code>butNot</code> set?
+Pre: The intersection of the typeflags of both sets must be non-empty.</p>
 
                         </div>
                     </div>
@@ -12806,7 +12807,7 @@ and at the same time contain none of the flags in the <code>butNot</code> set?</
                                     <span class="no-left">
                                         flags:
                                     </span>
-                                    <a href="../../../../../.././api/dotty/tools/dotc/core/Flags$/FlagConjunction.html">FlagConjunction</a>
+                                    <a href="../../../../../.././api/dotty/tools/dotc/core/Flags$/FlagSet.html">FlagSet</a>
                                     
                                         <span class="no-left">, </span>
                                     
@@ -12830,9 +12831,8 @@ and at the same time contain none of the flags in the <code>butNot</code> set?</
 
                     <div class="member-body">
                         <div class="member-body-long" id ="long-body-is(flags,butNot)">
-                            <p>Does this flag set have all of the flags in given flag conjunction?
-and at the same time contain none of the flags in the <code>butNot</code> set?
-Pre: The intersection of the typeflags of both sets must be non-empty.</p>
+                            <p>Does this flag set have a non-empty intersection with the given flag set,
+and at the same time contain none of the flags in the <code>butNot</code> set?</p>
 
                         </div>
                     </div>
